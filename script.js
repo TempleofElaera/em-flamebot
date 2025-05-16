@@ -2,7 +2,7 @@ async function sendMessage() {
   const message = document.getElementById("message").value;
   const replyDiv = document.getElementById("reply");
 
-  const response = await fetch("/ask", {
+const response = await fetch("https://em-flamebot.onrender.com/ask", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message })
